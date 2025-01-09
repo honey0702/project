@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test Dashboard</title>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar Section -->
+  <div class="navbar">
+    <div class="logo">Firstbench</div>
+    <ul>
+      <li><i class="fas fa-home"></i><a href="#">Dashboard</a></li>
+      <li><i class="fas fa-graduation-cap"></i><a href="#">FirstGuru</a></li>
+      <li><i class="fas fa-users"></i><a href="#">TownHall</a></li>
+      <li><i class="fas fa-brain"></i><a href="#">AI Evaluation</a></li>
+      <li><i class="fas fa-chart-line"></i><a href="#">Performance</a></li>
+      <li><i class="fas fa-edit"></i><a href="#">Mock Test</a></li>
+    </ul>
+    <button><i class="fas fa-user"></i> Profile</button>
+  </div>
+
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="result-section">
+        <h2>Your Result!</h2>
+        <p>All your insights & details in one place</p>
+
+        <div class="score-card">
+          <div class="score">136 / 240</div>
+          <div class="accuracy">76% ACCURACY</div>
+        </div>
+
+        <div class="top-score">
+          <img src="https://via.placeholder.com/50" alt="Top Scorer">
+          <div class="details">
+            <div class="name">Parth Akotkar</div>
+            <div class="accuracy">92% ACCURACY</div>
+          </div>
+        </div>
+
+        <p>Improve your Marks</p>
+        <button class="practice-btn">Practice More</button>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <h3>Suggestions</h3>
+      <ul>
+        <li>Focus on weak topics</li>
+        <li>Improve response time</li>
+      </ul>
+
+      <div class="chart">
+        <h3>Performance Overview</h3>
+        <canvas id="chartCanvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="revisit-section">
+    <h3>Revisit Paper</h3>
+    <p>Challenge your friends by simply sharing a link to this test</p>
+    <button class="visit-btn">Visit</button>
+    <p class="instructions">Instructions for how to upload your handwritten material are given.</p>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
